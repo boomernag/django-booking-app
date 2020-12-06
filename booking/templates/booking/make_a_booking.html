@@ -10,42 +10,43 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container h-100">
+    <div class="container h-100 d-flex justify-content-center">
         <div class="row h-100">
             <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-front text-black text-center">
+                <h3 class="display-4 logo-front text-black">
                     Make a booking
-                </h1>
+                </h3>
                 <div class="container">
                     <div class="row">
-                        <div class="dropdown show">
-                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLinkDay" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Choose a day
-                            </a>
-                            <div class="weekdays dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="weekday dropdown-item" href="#">Monday</a>
-                            <a class="weekday dropdown-item" href="#">Tuesdayn</a>
-                            <a class="weekday dropdown-item" href="#">Wednesday</a>
-                            <a class="weekday dropdown-item" href="#">Thursday</a>
-                            <a class="weekday dropdown-item" href="#">Friday</a>
-                            <a class="weekday dropdown-item" href="#">Saturday</a>
-                            <a class="weekday dropdown-item" href="#">Sunday</a>
+                        <form>
+                              <div class="form-group">
+                                <label for="day">Choose day</label>
+                                <select class="form-control" id="day">
+                                <option>Monday</option>
+                                <option>Tuesday</option>
+                                <option>Wednesday</option>
+                                <option>Thursday</option>
+                                <option>Friday</option>
+                                <option>Saturday</option>
+                                <option>Sunday</option>
+                                </select>
                             </div>
-                        </div>
-                        <div class="dropdown show">
-                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLinkTimeslot" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Choose a timeslot
-                            </a>
-                            <div class="weekdays dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="weekday dropdown-item" href="#">5-6</a>
-                            <a class="weekday dropdown-item" href="#">6-7</a>
-                            <a class="weekday dropdown-item" href="#">7-8</a>
-                            <a class="weekday dropdown-item" href="#">8-9</a>
-                            <a class="weekday dropdown-item" href="#">10-11</a>
-                            <a class="weekday dropdown-item" href="#">11-12</a>
-                            <a class="weekday dropdown-item" href="#">12-13</a>
+                            <div class="form-group">
+                                <label for="time">Choose timeslot</label>
+                                <select class="form-control" id="time">
+                                <option>5-6</option>
+                                <option>6-7</option>
+                                <option>7-8</option>
+                                <option>8-9</option>
+                                <option>9-10</option>
+                                <option>10-11</option>
+                                <option>11-12</option>
+                                </select>
                             </div>
-                        </div>
+                            <button id="book-button" class="btn btn-primary d-flex justify-content-center">
+							    <span class="font-weight-light">Book</span>
+						    </button>
+                        </form>
                     </div>
                 </div>
             </div>
