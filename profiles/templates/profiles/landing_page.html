@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Sign up</h1>
+            </div>
+            <div class="col">
+                <h3>If your are not yet a member - sign up here!</h3>
+            </div>
+            <a class="text-info" href="{% url 'signup' %}">Signup</a> or 
+        </div>
+    </div>
+{% endblock %}
