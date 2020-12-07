@@ -13,7 +13,7 @@ def make_a_booking(request):
     return render (request, 'booking/make_a_booking.html')
 
 
-def book(request):
+def booking_successful(request):
     """ A view as confirmation of a booking """
 
     return render (request, 'booking/index.html')

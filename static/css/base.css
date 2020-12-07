@@ -8,6 +8,10 @@ body {
     font-family: 'Lato';
 }
 
+.container {
+    margin-top: 50px;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
